@@ -1,0 +1,31 @@
+{
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.12.0",
+    "@types/jquery": "^3.5.30",
+    "parcel": "^2.12.0",
+    "typescript": "^5.4.5"
+  },
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "name": "ts-todo",
+  "version": "1.0.0",
+  "description": "A vanilla TS TODO app",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/elhombreforestal/ts-todo.git"
+  },
+  "author": "Daniel Hauser",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/elhombreforestal/ts-todo/issues"
+  },
+  "homepage": "https://github.com/elhombreforestal/ts-todo#readme",
+  "dependencies": {
+    "@popperjs/core": "^2.11.8",
+    "bootstrap": "^5.3.3",
+    "jquery": "3.5.30"
+  }
+}

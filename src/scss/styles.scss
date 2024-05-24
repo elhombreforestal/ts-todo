@@ -1,0 +1,43 @@
+@import 'color.scss';
+
+body {
+    background-color: $bg-color;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+h1 {
+    color: $secondary-color;
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+li {
+    color: $text-color;
+    border: 1px solid $bg-color-light;
+    font-size: 16px;
+    line-height: 1.5;
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    &.todo {
+        background-color: $bg-color-light;
+        color: $primary-color;
+    }
+    &:not(:last-child) {
+        border-bottom: 0;
+    }
+}
