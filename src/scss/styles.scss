@@ -27,17 +27,67 @@ ul {
 
 li {
     color: $text-color;
-    border: 1px solid $bg-color-light;
+    border: 1px transparent solid;
+    border-radius: 5px;
     font-size: 16px;
     line-height: 1.5;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
     padding: 5px;
+    margin-top: 1px;
     &.todo {
         background-color: $bg-color-light;
         color: $primary-color;
     }
-    &:not(:last-child) {
-        border-bottom: 0;
+    span {
+        flex-grow: 10;
     }
+}
+.icon {
+    cursor: pointer;
+    width: 16px;
+    height: 16px;
+    &svg {
+        width: 16px;
+        height: 16px;
+        fill: $primary-color;
+    }
+}
+
+.selected {
+    border: 1px solid $secondary-color;      
+    border-radius: 5px;  
+}
+
+input[type="text"] {
+    padding: 5px;
+    font-size: 16px;
+    border: 1px solid $text-color;
+    color: $hwite-color;
+    background-color: $bg-color-light;
+    border-radius: 5px;
+    margin-right: 10px;
+    flex-grow: 10;
+    width: 90%;
+}
+
+button {
+    padding: 5px 10px;
+    font-size: 16px;
+    border: 1px solid $secondary-color;
+    color: $hwite-color;
+    background-color: $secondary-color;
+    border-radius: 5px;
+    cursor: pointer;
+    &:hover {
+        background-color: darken($color: $secondary-color, $amount: 10);
+    }
+}
+
+.form {
+    display: flex;
+    margin-top: 20px;
+    padding: 5px;
 }
