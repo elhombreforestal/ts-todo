@@ -9,10 +9,12 @@ setSelectedId(-1);
 
 function main(): void {
     $("#addForm").append(AddForm(getSelectedId()));
+    $("#loading").show();
     api.fetchTodos().then(data => {
         localStorage.setItem('todos', JSON.stringify(data));
         renderTodos(getSelectedId());
     });
+    $("#loading").hide();
     $(document).on("keyup", (e) => {
         const todos = getTodos();
         const selectedId = getSelectedId();

@@ -8,6 +8,7 @@ export class TodoAPI {
                         throw new Error("Nelze nacist todo list");
                     }
                     return response.json();
+
                 })
                 .catch(error => {
                     console.error(error);
